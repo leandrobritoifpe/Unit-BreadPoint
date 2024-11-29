@@ -1,6 +1,6 @@
 /* Estilo para centralizar a tela */
 
-.divLogin {
+.div-login {
   margin: 0;
   font-family: 'Libre Baskerville', serif;
   background: #f5f5f5;
@@ -22,7 +22,7 @@
 }
 
 /* Título */
-.h1Login {
+.h1-login {
   margin-bottom: 1.5rem;
   color: #aa8060;
 }
