@@ -1,0 +1,138 @@
+
+/* *****************************************************************************************************/
+/* Update: 2024-11-22
+/* Description:  NavBar the Menu
+/* Author: Leandro Brito
+/* *****************************************************************************************************/
+.h3Plan{
+    font-family: 'Libre Baskerville', serif;
+}
+.divLabelPlan{
+    background-color: #d7c2b5;
+    width: 15%;
+    border-radius: 10px;
+    font-family: 'Libre Baskerville', serif;
+    color: #75563F;
+}
+.divLabelPlan:hover {
+    background-color: #d4946a;
+    width: 15%;
+    transition: background-color 0.3s ease;
+}
+
+.plans-container {
+    background-color: #75563F;
+    color: white;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.plans-container h2 {
+    margin-bottom: 20px;
+}
+
+.plans-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.plans-container ul li {
+    margin-bottom: 10px;
+}
+
+.plans-container ul li label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.plans-container ul li label input[type="radio"] {
+    margin-right: 10px;
+}
+
+.plans-container ul li label span {
+    font-weight: bold;
+}
+
+.spacer {
+    height: 30%;
+    width: 100%;
+}
+
+hr {
+    border: 5;
+    height: 3px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+    margin: 0;
+}.grid-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto; /* Centraliza a div */
+    width: 80%; /* Ocupa 80% da largura da div principal */
+}
+
+.grid-item {
+    display: flex;
+    align-items: center;
+    width: 48%;
+}
+
+.grid-item img {
+    max-width: 15%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.description {
+    margin-left: 20px;
+}
+.fixed-size {
+    width: 150px; /* Largura fixa */
+    height: 150px; /* Altura fixa */
+    object-fit: cover; /* Garante que a imagem cubra o espaço definido */
+}
+.grid-item label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.grid-item input[type="radio"] {
+    display: none; /* Oculta o input de rádio */
+}
+
+.grid-item img {
+    border: 2px solid transparent; /* Adiciona uma borda transparente */
+}
+
+.grid-item img:hover {
+    border: 10px solid #d4946a; /* Muda a cor da borda quando o mouse está sobre a imagem */
+}
+
+.grid-item input[type="radio"]:checked + img {
+    border: 10px solid #d6a07c; /* Muda a cor da borda quando a opção é selecionada */
+}
+.divLabelPlan input[type="radio"]:checked + span {
+    border: 5px solid #d6a07c; /* Muda a cor da borda quando a opção é selecionada */
+    border-radius: 5px; /* Arredonda as bordas */
+}
+@media (max-width: 768px) {
+    .plans-container {
+        width: 90%;
+    }
+    .grid-container {
+        flex-direction: column;
+    }
+    .grid-item {
+        width: 100%;
+    }
+    .description {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
