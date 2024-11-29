@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,12 +11,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/styles.css">
+    <!--Tela de Cadastro-->
+    <link rel="stylesheet" href="css/Cadastro.css">
 </head>
+
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark">
         <a class="navbar-brand" href="#">Bread Point</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -28,68 +33,67 @@
                 </li>
             </ul>
         </div>
-        <div class="d-flex">
-            <button type="button" class="btn btn-outline-light btn-login mr-2">Login</button>
-            <button type="button" class="btn btn-outline-light btn-register">Register</button>
-        </div>
     </nav>
 
-   <!--Tela de Cadastro -->
-
-   <div class="register-container">
-    <h1>Cadastro</h1>
-    <form class="register-form">
-      <input type="email" placeholder="Email" required>
-      <input type="password" placeholder="Senha" required>
-      <input type=" password" placeholder="Confirmar Senha" required>
-      <div class="form-options">
-        <label>
-          <input type="checkbox">
-          Lembrar conta
-        </label>
-        <a href="#">Esqueceu a senha?</a>
-      </div>
-      <button type="submit">Cadastrar</button>
-    </form>
-    <div class="divider">ou</div>
-    <div class="social-login">
-      <button class="apple">Cadastrar com Apple</button>
-      <button class="gmail">Cadastrar com Gmail</button>
-      <button class="facebook">Cadastrar com Facebook</button>
+    <!--Tela de Cadastro -->
+    <div class="div-cadastro">
+        <div class="register-container">
+            <h1 class="h1-cadastro">Register</h1>
+            <form class="register-form">
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <input type=" password" placeholder="Confirm Password" required>
+                <div class="form-options">
+                    <label>
+                        <input type="checkbox">
+                        Remember User
+                    </label>
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <button type="submit">Register</button>
+            </form>
+            <div class="divider">or</div>
+            <div class="social-login">
+                <button class="apple">Sign in with Apple</button>
+                <button class="gmail">Sign in with Gmail</button>
+                <button class="facebook">Sign in with Facebook</button>
+            </div>
+            <p class="login-link">
+                Already Have an Account? <a href="#">Login</a>
+            </p>
+        </div>
     </div>
-    <p class="login-link">
-      Já tem uma conta? <a href="#">Login</a>
-    </p>
-  </div>
 
-  <!-- Rodapé  https://cdn-icons-png.flaticon.com/512/5968/5968534.png-->
-<footer>
-    <div class="footer-content">
-        <a href="https://wa.me/seu_numero_de_whatsapp" target="_blank">
-            <img src="img/icon_whats.png" alt="WhatsApp">
-            WhatsApp
-        </a>
-        <a href="mailto:seu_email@example.com" target="_blank">
-            <img src="img/icon_gmail.png" alt="E-mail">
-            E-mail
-        </a>
-        <a href="mailto:seu_email@example.com" target="_blank">
-            <img src="img/icon_instas.png" alt="E-mail">
-            Instagram
-        </a>
-    </div>
-    <div class="footer-culinary">
-        "Cooking is like love. It should be entered into with abandon or not at all." - Harriet Van Horne
-    </div>
-</footer>
+    <!-- Rodapé  https://cdn-icons-png.flaticon.com/512/5968/5968534.png-->
+    <footer>
+        <div class="footer-content">
+            <a href="https://wa.me/seu_numero_de_whatsapp" target="_blank">
+                <img src="img/icon_whats.png" alt="WhatsApp">
+                WhatsApp
+            </a>
+            <a href="mailto:seu_email@example.com" target="_blank">
+                <img src="img/icon_gmail.png" alt="E-mail">
+                E-mail
+            </a>
+            <a href="mailto:seu_email@example.com" target="_blank">
+                <img src="img/icon_instas.png" alt="E-mail">
+                Instagram
+            </a>
+        </div>
+        <div class="footer-culinary">
+            "Cooking is like love. It should be entered into with abandon or not at all." - Harriet Van Horne
+        </div>
+    </footer>
 
-<script src="lib/jquery/jquery.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-<script src="lib/bootstrap/js/bootstrap.min.js"></script>
-<script src="js/scripts.js"></script>
+    <script src="lib/jquery/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
+
 </html>
 
-    
+
 </body>
+
 </html>
