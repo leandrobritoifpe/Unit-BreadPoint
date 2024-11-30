@@ -4,18 +4,22 @@
 /* Description:  NavBar the Menu
 /* Author: Leandro Brito
 /* *****************************************************************************************************/
+body{
+    font-family: 'Libre Baskerville', serif !important;
+}
 .navbar {
+    /*font-family: 'Libre Baskerville', serif !important;*/
     background-color: #75563F;
+    font-size: 12pt;
 }
 .navbar-brand {
-    font-family: 'Libre Baskerville', serif !important;
     font-weight: 700;
     color: #C3905F !important;
 }
 .nav-link {
-    font-family: 'Libre Baskerville', serif;
     font-weight: 700;
     color: #FFFFFF !important;
+    font-size: 12pt;
 }
 .nav-link:hover {
     color: #ddd !important;
@@ -32,7 +36,7 @@
     margin-right: 10px;
 }
 .btn-login:hover {
-    color: #75563F;
+    color: #46745d;
     background-color: white;
 }
 .btn-register {
@@ -43,7 +47,7 @@
 }
 .btn-register:hover {
     color: white;
-    background-color: #A06D4C;
+    background-color: #46745d;
 }
 /* *****************************************************************************************************/
 /* *****************************************************************************************************/
@@ -93,13 +97,12 @@
     background-color: #C3905F; /* Fundo do texto */
     padding: 20px;
     color: white;
-    font-family: 'Libre Baskerville', serif;
     justify-content: center; /* Centraliza o conteúdo verticalmente */
     border-radius: 30px; /* Bordas arredondadas */
     width: 80%;
 }
 .second-banner-content .btn-view-plans:hover {
-    background-color: #A06D4C; /* Cor de fundo ao passar o mouse */
+    background-color: #46745d; /* Cor de fundo ao passar o mouse */
     color: white;
 }
 /* *****************************************************************************************************/
@@ -129,7 +132,7 @@
     text-align: center;
 }
 .menu-grid .card-title {
-    font-family: 'Libre Baskerville', serif;
+    font-size: 12pt;
     font-weight: bold;
     margin-bottom: 10px;
     color: #A06D4C;
@@ -141,7 +144,7 @@
 }
 .menu-grid .card-img-link:hover,
 .menu-grid .card-title-link:hover {
-    color: #C3905F;
+    color: #46745d;
     text-decoration: underline;
 }
 /* *****************************************************************************************************/
