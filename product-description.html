@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bread Point - Bakery</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!--Tela da descrição do produto-->
+    <link rel="stylesheet" href="css/product-description.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">Bread Point</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Plans</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Menus</a>
+                </li>
+            </ul>
+        </div>
+        <div class="d-flex">
+            <button type="button" class="btn btn-outline-light btn-login mr-2">Login</button>
+            <button type="button" class="btn btn-outline-light btn-register">Register</button>
+        </div>
+    </nav>
+
+    <!--Tela de descrição do produto-->
+    <div class="div-product-description">
+        <div class="product-image">
+            <div class="image-placeholder">
+                <span>15 MIN MEAL</span>
+            </div>
+        </div>
+        <div class="product-info">
+            <h1>15 - Min food name</h1>
+            <p class="subtitle">description of the food in the picture</p>
+            <div class="meal-info">
+                <span>15 MIN MEAL</span>
+                <span>2 Servings</span>
+            </div>
+            <select class="dropdown">
+                <option value="">add Pancetta</option>
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+            </select>
+
+            <h2>From the Test Kitchen</h2>
+            <p class="description">
+                Designed to be ready in just 15 minutes, our new line of meals feature pre-cooked grains and
+                easy-to-prep ingredients to create the same high-quality dishes you love, in less time! Here, tender
+                gnocchi and verdant broccoli come together in a creamy, zippy sauce featuring mascarpone, lemon juice,
+                and our new roasted garlic pesto.
+            </p>
+
+            <button class="see-plans-btn">SEE PLANS</button>
+
+            <h3>Dietary Information</h3>
+            <p>See nutrition facts for total fat, saturated fat, cholesterol, and sodium information</p>
+            <span class="tag">Vegetarian</span>
+
+            <h3>Nutrition</h3>
+            <p>PER SERVING</p>
+            <p>Calories: xxx Cals</p>
+        </div>
+    </div>
+
+    <!-- Rodapé  https://cdn-icons-png.flaticon.com/512/5968/5968534.png-->
+    <footer>
+        <div class="footer-content">
+            <a href="https://wa.me/seu_numero_de_whatsapp" target="_blank">
+                <img src="img/icon_whats.png" alt="WhatsApp">
+                WhatsApp
+            </a>
+            <a href="mailto:seu_email@example.com" target="_blank">
+                <img src="img/icon_gmail.png" alt="E-mail">
+                E-mail
+            </a>
+            <a href="mailto:seu_email@example.com" target="_blank">
+                <img src="img/icon_instas.png" alt="E-mail">
+                Instagram
+            </a>
+        </div>
+        <div class="footer-culinary">
+            "Cooking is like love. It should be entered into with abandon or not at all." - Harriet Van Horne
+        </div>
+    </footer>
+
+    <script src="lib/jquery/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+/* Configuração Geral */
+.div-product-description{
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: #fff;
+    color: #4a4a4a;
+    line-height: 1.6;
+  }
+  
+  /* Conteúdo Principal */
+  .product-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+    gap: 2rem;
+  }
+  
+  .product-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image-placeholder {
+    background-color: #d7b090;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .product-info {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    color: #4a4a4a;
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+    color: #7d7d7d;
+    margin-bottom: 1rem;
+  }
+  
+  .meal-info {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.9rem;
+    color: #4a4a4a;
+    margin-bottom: 1rem;
+  }
+  
+  .dropdown {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 2rem;
+  }
+  
+  .description {
+    font-size: 1rem;
+    color: #4a4a4a;
+    margin: 1rem 0;
+  }
+  
+  .see-plans-btn {
+    padding: 0.8rem 1.5rem;
+    background-color: #5b7f63;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 1rem 0;
+  }
+  
+  .see-plans-btn:hover {
+    background-color: #476549;
+  }
+  
+  .tag {
+    display: inline-block;
+    background-color: #f0f0f0;
+    padding: 0.3rem 0.6rem;
+    font-size: 0.8rem;
+    color: #4a4a4a;
+    border-radius: 4px;
+    margin-top: 1rem;
+  }
