@@ -1,0 +1,90 @@
+/* Configuração Geral */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Layout Principal */
+.product-container {
+  display: flex;
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 1rem;
+  gap: 2rem;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Imagem do Produto 
+.product-image img {
+  width: 200%;
+  max-width: 200px;
+  object-fit: cover;
+  border-radius: 20px;
+  margin: 0rem auto;
+} */
+
+/* Informações do Produto */
+.product-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.h1-product-description {
+  font-size: 2rem;
+  color: #4a4a4a;
+  margin-bottom: 0rem;
+}
+
+.description {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+/* Botão de Comprar */
+.buy-btn {
+  padding: 0.8rem 1.5rem;
+  background-color: #46745d;
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.buy-btn:hover {
+  background-color: #1d4732;
+}
+
+/* Seção de Informações Nutricionais */
+.nutrition-section {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.nutrition-section h3 {
+  font-size: 1.5rem;
+  color: #000000;
+  margin-bottom: 1rem;
+}
+
+.nutrition-section p {
+  margin: 0.3rem 0;
+  font-size: 1rem;
+  color: #000000;
+}
