@@ -7,6 +7,10 @@
 body{
     font-family: 'Libre Baskerville', serif !important;
 }
+.div-bar-green{
+    background-color: #46745d;
+    height: 35px;
+}
 .navbar {
     background-color: #75563F;
     font-size: 12pt;
