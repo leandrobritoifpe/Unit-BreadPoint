@@ -1,0 +1,345 @@
+
+/* *****************************************************************************************************/
+/* Update: 2024-11-22
+/* Description:  NavBar the Menu
+/* Author: Leandro Brito
+/* *****************************************************************************************************/
+body{
+    font-family: 'Libre Baskerville', serif !important;
+}
+.div-bar-green{
+    background-color: #46745d;
+    height: 35px;
+}
+.navbar {
+    background-color: #75563F;
+    font-size: 12pt;
+}
+.navbar-brand {
+    font-weight: 700;
+    color: #C3905F !important;
+}
+.nav-link {
+    font-weight: 700;
+    color: #FFFFFF !important;
+    font-size: 12pt;
+}
+.nav-link:hover {
+    color: #ddd !important;
+    text-decoration: underline;
+    text-decoration-thickness: 3px; /* Espessura do underline */
+    text-underline-offset: 4px; /* Distância do underline em relação ao texto */
+}
+/* *****************************************************************************************************/
+/* *****************************************************************************************************/
+/* Update: 2024-11-22
+/* Description:  Buttons Login and Register the Menu
+/* Author: Leandro Brito
+/* *****************************************************************************************************/
+.btn-login {
+    color: white;
+    border-color: white;
+    margin-right: 10px;
+}
+.btn-login:hover {
+    color: white;
+    background-color: #1d4732;
+}
+.btn-register {
+    color: white;
+    border-color: white;
+    background-color: #C3905F;
+    margin-right: 10px;
+}
+.btn-register:hover {
+    color: white;
+    background-color: #46745d;
+}
+/* *****************************************************************************************************/
+/* *****************************************************************************************************/
+/* Update: 2024-11-22
+/* Description:  Banner last Menu
+/* Author: Leandro Brito
+/* *****************************************************************************************************/
+.banner {
+    background-image: url('../img/banner3.png');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    position: relative;
+}
+.banner-content {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+.btn-view-plans {
+    background-color: #46745d;
+    color: #75563F;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Libre Baskerville', serif;
+    height: 70px;
+}
+.btn-view-plans:hover {
+    color: white;
+    background-color: #A06D4C;
+}
+/* Spacer */
+.spacer {
+    height: 5px; /* Espaço entre os banners */
+}
+.second-banner {
+    background-image: url('../img/plan3.jpg');
+    padding: 15px; /* Sem padding interno */
+    width: 60%; /* O banner ocupa 75% da tela */
+    margin: 50px auto; /* Centraliza o banner e adiciona espaço acima e abaixo */
+    border-radius: 10px; /* Bordas arredondadas */
+    overflow: hidden; /* Esconde o excesso */
+    height: 350px;
+}
+.second-banner-content {
+    background-color: #C3905F; /* Fundo do texto */
+    padding: 20px;
+    color: white;
+    justify-content: center; /* Centraliza o conteúdo verticalmente */
+    border-radius: 30px; /* Bordas arredondadas */
+    width: 80%;
+}
+.second-banner-content .btn-view-plans:hover {
+    background-color: #46745d; /* Cor de fundo ao passar o mouse */
+    color: white;
+}
+/* *****************************************************************************************************/
+/* Update: 2024-11-22
+/* Description:  Banner last Menu
+/* Author: Leandro Brito
+/* *****************************************************************************************************/
+.menu-grid {
+    margin-top: 3%;
+}
+.menu-grid .card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+.menu-grid .card:hover {
+    transform: scale(1.05);
+}
+.menu-grid .card-img-top {
+    border-radius: 10px;
+    width: 100%;
+    height: 200px; /* Altura fixa para todas as imagens */
+    object-fit: cover; /* Garante que a imagem cubra toda a área */
+}
+.menu-grid .card-body {
+    text-align: center;
+}
+.menu-grid .card-title {
+    font-size: 12pt;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #A06D4C;
+}
+.menu-grid .card-img-link,
+.menu-grid .card-title-link {
+    color: inherit;
+    text-decoration: none;
+}
+.menu-grid .card-img-link:hover,
+.menu-grid .card-title-link:hover {
+    text-decoration: underline;
+}
+/* *****************************************************************************************************/
+/* Update: 2024-11-22
+/* Description:  Banner last Menu
+/* Author: Leandro Brito
+/* *****************************************************************************************************/
+footer {
+    background-color: #75563f;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+    /*position: fixed;*/
+    bottom: 0;
+    width: 100%;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 9pt;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+}
+
+.footer-content img {
+    width: 24px;
+    height: 24px;
+}
+/* *****************************************************************************************************/
+/* Update: 2024-11-22
+/* Description:  Banner last Menu
+/* Author: Leandro Brito
+/* *****************************************************************************************************/
+.menu-banner {
+    background-color: #75563f;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+    margin: 0 auto;
+    height: 50px;
+    margin-top: 20px;
+    border-radius: 10px;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 700;
+}
+.menu-banner img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+.clickable-background {
+    display: block; /* Torna o link um bloco clicável */
+    height: 100%; /* Altura total do contêiner */
+    width: 100%; /* Largura total do contêiner */
+    text-decoration: none; /* Remove o sublinhado do link */
+}
+
+.banner {
+    background-image: url('../img/banner7.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    position: relative;
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    flex-direction: column; /* Organiza os itens em coluna */
+    text-align: center; /* Centraliza o texto */
+}
+
+.banner-text {
+    position: absolute;
+    top: 40%; /* Ajusta a posição do texto para baixo */
+    left: 15%; /* Ajusta a posição do texto para a esquerda */
+    transform: translate(-50%, -50%); /* Centraliza o texto */
+    text-align: left; /* Alinha o texto à esquerda */
+    font-size: 25pt;
+}
+
+.banner-phrase {
+    margin: 5px 0; /* Espaçamento entre as frases */
+}
+
+.banner-phrase:nth-child(1) {
+    color: #5c3b22; /* Cor marrom */
+}
+
+.banner-phrase:nth-child(2) {
+    color: #FFFFFF; /* Cor branca */
+}
+
+.banner-phrase:nth-child(3) {
+    color:#5c3b22; /* Cor marrom */
+}
+
+.banner-content {
+    margin-top: 20px; /* Espaçamento entre o texto e o botão */
+    text-align: left; /* Alinha o botão à esquerda */
+    position: absolute;
+    top: 70%; /* Ajusta a posição do botão para baixo */
+    left: 15%; /* Alinha o botão com as frases */
+    transform: translate(-50%, -50%); /* Centraliza o botão */
+}
+
+.btn-view-plans {
+    background-color: #54705c;
+    color: white;
+    border: none;
+    padding: 10px 60px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Libre Baskerville', serif;
+    height: 70px;
+    display: flex;
+    align-items: center; /* Centraliza o texto verticalmente */
+    justify-content: center; /* Centraliza o texto horizontalmente */
+    border-radius: 20px;
+    font-size: 20pt;
+}
+
+.btn-view-plans:hover {
+    color: white;
+    background-color: #1d4732;
+}
+
+.btn-view-plans-secondary {
+    background-color: #54705c;
+    color: white;
+    border: none;
+    padding: 10px 50px; /* Diminui ainda mais o tamanho do botão na horizontal */
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Libre Baskerville', serif;
+    height: 50px; /* Mantém a altura do botão */
+    display: inline-flex; /* Usa inline-flex para garantir que o botão não seja influenciado por outras divs */
+    align-items: center; /* Centraliza o texto verticalmente */
+    justify-content: center; /* Centraliza o texto horizontalmente */
+    white-space: nowrap; /* Impede que o texto quebre para uma nova linha */
+    line-height: 1; /* Ajusta a altura da linha do texto */
+    max-width: 150px; /* Define uma largura máxima para o botão */
+    width: auto; /* Garante que a largura do botão seja automática */
+    border-radius: 20px;
+}
+
+.btn-view-plans-secondary:hover {
+    color: white;
+    background-color: #1d4732;
+}
+.div-group-h4-second-banner{
+    color: #5c3b22;
+}
+
+.btn-center {
+    text-align: center; /* Centraliza o botão dentro da div */
+}
+
+.phrases-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza as frases horizontalmente */
+    justify-content: center; /* Centraliza as frases verticalmente */
+    text-align: center; /* Centraliza o texto dentro da div */
+}
+
+.phrase-top {
+    color: #75563F;
+    font-weight: bold;
+    font-size: 30px; /* Tamanho da fonte opcional */
+    line-height: 1.2; /* Altura da linha opcional */
+}
+
+.phrase-bottom {
+    color: #C3905F;
+    font-weight: bold;
+    font-size: 30px; /* Tamanho da fonte opcional */
+    line-height: 1.2; /* Altura da linha opcional */
+    position: relative;
+    left: 3.5em; /* Alinha o início da segunda frase ao segundo caractere da primeira frase */
+}

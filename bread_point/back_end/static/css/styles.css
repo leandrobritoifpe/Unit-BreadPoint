@@ -1,0 +1,211 @@
+
+/* *****************************************************************************************************/
+/* Update: 2024-11-22
+/* Description:  NavBar the Menu
+/* Author: Leandro Brito
+/* *****************************************************************************************************/
+body{
+    font-family: 'Libre Baskerville', serif !important;
+}
+.navbar {
+    /*font-family: 'Libre Baskerville', serif !important;*/
+    background-color: #75563F;
+    font-size: 12pt;
+}
+.navbar-brand {
+    font-weight: 700;
+    color: #C3905F !important;
+}
+.nav-link {
+    font-weight: 700;
+    color: #FFFFFF !important;
+    font-size: 12pt;
+}
+.nav-link:hover {
+    color: #ddd !important;
+}
+/* *****************************************************************************************************/
+/* *****************************************************************************************************/
+/* Update: 2024-11-22
+/* Description:  Buttons Login and Register the Menu
+/* Author: Leandro Brito
+/* *****************************************************************************************************/
+.btn-login {
+    color: white;
+    border-color: white;
+    margin-right: 10px;
+}
+.btn-login:hover {
+    color: #46745d;
+    background-color: white;
+}
+.btn-register {
+    color: white;
+    border-color: white;
+    background-color: #C3905F;
+    margin-right: 10px;
+}
+.btn-register:hover {
+    color: white;
+    background-color: #46745d;
+}
+/* *****************************************************************************************************/
+/* *****************************************************************************************************/
+/* Update: 2024-11-22
+/* Description:  Banner last Menu
+/* Author: Leandro Brito
+/* *****************************************************************************************************/
+.banner {
+    background-image: url('../img/banner3.png'); /* Substitua pelo URL da sua imagem */
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    position: relative;
+}
+.banner-content {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+.btn-view-plans {
+    background-color: rgba(255, 255, 255, 0.8); 
+    color: #75563F;
+    border: 5px;
+    padding: 25px 70px;
+    font-size: large;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Libre Baskerville', serif;
+}
+.btn-view-plans:hover {
+    color: white;
+    background-color: #A06D4C;
+}
+/* Spacer */
+.spacer {
+    height: 5px; /* Espaço entre os banners */
+}
+.second-banner {
+    background-image: url('../img/plan3.jpg');
+    padding: 15px; /* Sem padding interno */
+    width: 75%; /* O banner ocupa 75% da tela */
+    margin: 50px auto; /* Centraliza o banner e adiciona espaço acima e abaixo */
+    border-radius: 10px; /* Bordas arredondadas */
+    overflow: hidden; /* Esconde o excesso */
+    height: 350px;
+}
+.second-banner-content {
+    background-color: #C3905F; /* Fundo do texto */
+    padding: 20px;
+    color: white;
+    justify-content: center; /* Centraliza o conteúdo verticalmente */
+    border-radius: 30px; /* Bordas arredondadas */
+    width: 80%;
+}
+.second-banner-content .btn-view-plans:hover {
+    background-color: #46745d; /* Cor de fundo ao passar o mouse */
+    color: white;
+}
+/* *****************************************************************************************************/
+/* Update: 2024-11-22
+/* Description:  Banner last Menu
+/* Author: Leandro Brito
+/* *****************************************************************************************************/
+.menu-grid {
+    padding: 50px 0;
+}
+.menu-grid .card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+.menu-grid .card:hover {
+    transform: scale(1.05);
+}
+.menu-grid .card-img-top {
+    border-radius: 10px;
+    width: 100%;
+    height: 200px; /* Altura fixa para todas as imagens */
+    object-fit: cover; /* Garante que a imagem cubra toda a área */
+}
+.menu-grid .card-body {
+    text-align: center;
+}
+.menu-grid .card-title {
+    font-size: 12pt;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #A06D4C;
+}
+.menu-grid .card-img-link,
+.menu-grid .card-title-link {
+    color: inherit;
+    text-decoration: none;
+}
+.menu-grid .card-img-link:hover,
+.menu-grid .card-title-link:hover {
+    color: #46745d;
+    text-decoration: underline;
+}
+/* *****************************************************************************************************/
+/* Update: 2024-11-22
+/* Description:  Banner last Menu
+/* Author: Leandro Brito
+/* *****************************************************************************************************/
+footer {
+    background-color: #75563F;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 9pt;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+}
+
+.footer-content img {
+    width: 24px;
+    height: 24px;
+}
+/* *****************************************************************************************************/
+/* Update: 2024-11-22
+/* Description:  Banner last Menu
+/* Author: Leandro Brito
+/* *****************************************************************************************************/
+.menu-banner {
+    background-color: #75563F;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+    margin: 0 auto;
+    height: 50px;
+    margin-top: 20px;
+    border-radius: 10px;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 700;
+}
+.menu-banner img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
