@@ -27,8 +27,8 @@ body{
 .nav-link:hover {
     color: #ddd !important;
     text-decoration: underline;
-    text-decoration-thickness: 3px; /* Espessura do underline */
-    text-underline-offset: 4px; /* Distância do underline em relação ao texto */
+    text-decoration-thickness: 3px; 
+    text-underline-offset: 4px;
 }
 /* *****************************************************************************************************/
 /* *****************************************************************************************************/
@@ -87,29 +87,29 @@ body{
     color: white;
     background-color: #A06D4C;
 }
-/* Spacer */
+
 .spacer {
-    height: 5px; /* Espaço entre os banners */
+    height: 5px;
 }
 .second-banner {
     background-image: url('../img/plan3.jpg');
-    padding: 15px; /* Sem padding interno */
-    width: 60%; /* O banner ocupa 75% da tela */
+    padding: 15px;
+    width: 60%;
     margin: 50px auto; /* Centraliza o banner e adiciona espaço acima e abaixo */
-    border-radius: 10px; /* Bordas arredondadas */
+    border-radius: 10px;
     overflow: hidden; /* Esconde o excesso */
     height: 350px;
 }
 .second-banner-content {
-    background-color: #C3905F; /* Fundo do texto */
+    background-color: #C3905F;
     padding: 20px;
     color: white;
-    justify-content: center; /* Centraliza o conteúdo verticalmente */
-    border-radius: 30px; /* Bordas arredondadas */
+    justify-content: center;
+    border-radius: 30px;
     width: 80%;
 }
 .second-banner-content .btn-view-plans:hover {
-    background-color: #46745d; /* Cor de fundo ao passar o mouse */
+    background-color: #46745d;
     color: white;
 }
 /* *****************************************************************************************************/
@@ -132,7 +132,7 @@ body{
 .menu-grid .card-img-top {
     border-radius: 10px;
     width: 100%;
-    height: 200px; /* Altura fixa para todas as imagens */
+    height: 200px; 
     object-fit: cover; /* Garante que a imagem cubra toda a área */
 }
 .menu-grid .card-body {
@@ -216,10 +216,10 @@ footer {
 }
 
 .clickable-background {
-    display: block; /* Torna o link um bloco clicável */
-    height: 100%; /* Altura total do contêiner */
-    width: 100%; /* Largura total do contêiner */
-    text-decoration: none; /* Remove o sublinhado do link */
+    display: block; 
+    height: 100%; 
+    width: 100%;
+    text-decoration: none;
 }
 
 .banner {
@@ -229,44 +229,44 @@ footer {
     height: 500px;
     position: relative;
     display: flex;
-    align-items: center; /* Centraliza verticalmente */
-    justify-content: center; /* Centraliza horizontalmente */
-    flex-direction: column; /* Organiza os itens em coluna */
-    text-align: center; /* Centraliza o texto */
+    align-items: center; 
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
 }
 
 .banner-text {
     position: absolute;
-    top: 40%; /* Ajusta a posição do texto para baixo */
-    left: 15%; /* Ajusta a posição do texto para a esquerda */
-    transform: translate(-50%, -50%); /* Centraliza o texto */
-    text-align: left; /* Alinha o texto à esquerda */
+    top: 40%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    text-align: left;
     font-size: 25pt;
 }
 
 .banner-phrase {
-    margin: 5px 0; /* Espaçamento entre as frases */
+    margin: 5px 0;
 }
 
 .banner-phrase:nth-child(1) {
-    color: #5c3b22; /* Cor marrom */
+    color: #5c3b22;
 }
 
 .banner-phrase:nth-child(2) {
-    color: #FFFFFF; /* Cor branca */
+    color: #FFFFFF;
 }
 
 .banner-phrase:nth-child(3) {
-    color:#5c3b22; /* Cor marrom */
+    color:#5c3b22; 
 }
 
 .banner-content {
-    margin-top: 20px; /* Espaçamento entre o texto e o botão */
-    text-align: left; /* Alinha o botão à esquerda */
+    margin-top: 20px;
+    text-align: left;
     position: absolute;
-    top: 70%; /* Ajusta a posição do botão para baixo */
-    left: 15%; /* Alinha o botão com as frases */
-    transform: translate(-50%, -50%); /* Centraliza o botão */
+    top: 70%;
+    left: 15%;
+    transform: translate(-50%, -50%);
 }
 
 .btn-view-plans {
@@ -279,8 +279,8 @@ footer {
     font-family: 'Libre Baskerville', serif;
     height: 70px;
     display: flex;
-    align-items: center; /* Centraliza o texto verticalmente */
-    justify-content: center; /* Centraliza o texto horizontalmente */
+    align-items: center;
+    justify-content: center;
     border-radius: 20px;
     font-size: 20pt;
 }
