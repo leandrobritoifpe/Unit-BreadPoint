@@ -58,7 +58,7 @@
                 <div class="grid-item">
                     <label>
                         <input type="radio" name="planOne" value="basic" class="btRadioPlan">
-                        <img src="img/select_plan1.jpg" alt="Image 1" class="img-fluid fixed-size">
+                        <img src="{{ url_for('static', filename='img/select_plan1.jpg') }}" alt="Image 1" class="img-fluid fixed-size">
                         <div class="description">
                             <p class="description-select-plan-type-meal">
                                 This is a description for the first image. It provides more information about the image
@@ -71,7 +71,7 @@
                 <div class="grid-item">
                     <label>
                         <input type="radio" name="planOne" value="family-friendly">
-                        <img src="img/select_plan1.jpg" alt="Image 2" class="img-fluid fixed-size">
+                        <img src="{{ url_for('static', filename='img/select_plan1.jpg') }}" alt="Image 2" class="img-fluid fixed-size">
                         <div class="description">
                             <p class="description-select-plan-type-meal">
                                 This is a description for the second image. It provides more information about the image
@@ -170,7 +170,9 @@
            
         </div>
         <div class="new-div-finish-select-plan">
+            <a href="/checkout">
             <button class="finish-select-plan-btn">Finish</button>
+            </a>
         </div>
     </div>
     <br>
