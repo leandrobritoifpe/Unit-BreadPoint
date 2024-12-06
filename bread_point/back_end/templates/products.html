@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Bread Point - Products</title>
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="{{url_for('static', filename='lib/bootstrap/css/bootstrap.min.css')}}">
+      <!-- Google Fonts -->
+      <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+      <!-- Custom CSS -->
+      <link rel="stylesheet" href="{{url_for('static', filename='css/products.css')}}">
+   </head>
+   <body>
+      {% include 'navbar-select-option.html'%}
+      {% include 'product-banner.html'%}
+      <div class="plans-container">
+         <div class="menu-grid">
+            <div class="container">
+               <div class="row">
+                  {% for product in products %}
+                  <div class="col-md-3 col-sm-6 mb-4">
+                     <div class="card">
+                        <!-- Imagem do produto -->
+                        <a href="/product/{{ product.id }}" class="card-img-link">
+                           <img src="{{ product.image }}" alt="{{ product.product_name }}" class="card-img-top">
+                        </a>
+                        <div class="card-body">
+                           <!-- Nome do produto -->
+                           <a href="/product/{{ product.id }}" class="card-title-link">
+                              <h5 class="card-title">{{ product.product_name }}</h5>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+                  {% endfor %}
+               </div>
+            </div>
+         </div>
+      </div>
+      <br>
+      <br>
+      <br>
+      {% include 'footer-finish-page.html'%}
+      <!-- Script de Importação -->
+      <script src="{{url_for('static', filename='lib/jquery/jquery.slim.min.js')}}"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+      <script src="{{url_for('static', filename='lib/bootstrap/js/bootstrap.min.js')}}"></script>
+      <script src="{{url_for('static', filename='js/scripts.js')}}"></script>
+      <script src="{{url_for('static', filename='js/logout.js')}}"></script>
+   </body>
+</html>

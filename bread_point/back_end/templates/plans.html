@@ -1,210 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bread Point - Plans</title>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="{{url_for('static', filename='lib/bootstrap/css/bootstrap.min.css')}}">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="{{url_for('static', filename='css/home.css')}}">
-    <link rel="stylesheet" href="{{url_for('static', filename='css/plan.css')}}">
-</head>
-
-<body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand" href="/">Bread Point</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="/plans">Plans</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/products">Menus</a>
-                </li>
-            </ul>
-            <!-- Exibição condicional com base no login -->
-            <ul class="navbar-nav ml-auto">
-                {% if session.get('logged_in') %}
-                    <li class="nav-item">
-                        <a class="nav-link" href="/logout">
-                            <img src="{{ url_for('static', filename='img/userIcon.png') }}" alt="User Icon" width="30" />
-                            Logout
-                        </a>
-                    </li>
-                {% else %}
-                    <li class="nav-item">
-                        <a class="nav-link" href="/login">Login</a>
-                        <a class="nav-link" href="/register">register</a>
-                    </li>
-                {% endif %}
-            </ul>
-        </div>
-    </nav>
-
-    <div class="plans-container">
-        <div class="select-plan-type-meal">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Bread Point - Plans</title>
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="{{url_for('static', filename='lib/bootstrap/css/bootstrap.min.css')}}">
+      <!-- Google Fonts -->
+      <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+      <!-- Custom CSS -->
+      <link rel="stylesheet" href="{{url_for('static', filename='css/home.css')}}">
+      <link rel="stylesheet" href="{{url_for('static', filename='css/plan.css')}}">
+   </head>
+   <body>
+      {% include 'navbar-select-option.html'%}
+      <div class="plans-container">
+         <div class="select-plan-type-meal">
             <div class="spacer"></div>
             <h5 class="h5-plan text-center"> 1 - Chose your preferred type of meal</h5>
             <div class="grid-container">
-                <div class="grid-item">
-                    <label>
-                        <input type="radio" name="planOne" value="basic" class="btRadioPlan">
-                        <img src="{{ url_for('static', filename='img/select_plan1.jpg') }}" alt="Image 1" class="img-fluid fixed-size">
-                        <div class="description">
-                            <p class="description-select-plan-type-meal">
-                                This is a description for the first image. It provides more information about the image
-                                and
-                                its context.
-                            </p>
-                        </div>
-                    </label>
-                </div>
-                <div class="grid-item">
-                    <label>
-                        <input type="radio" name="planOne" value="family-friendly">
-                        <img src="{{ url_for('static', filename='img/select_plan1.jpg') }}" alt="Image 2" class="img-fluid fixed-size">
-                        <div class="description">
-                            <p class="description-select-plan-type-meal">
-                                This is a description for the second image. It provides more information about the image
-                                and
-                                its context.
-                            </p>
-                        </div>
-                    </label>
-                </div>
+               <div class="grid-item">
+                  <label>
+                     <input type="radio" name="planOne" value="month" class="btRadioPlan">
+                     <img src="{{ url_for('static', filename='img/plan_30_days.jpg') }}" alt="Image 1" class="img-fluid fixed-size">
+                     <div class="description">
+                        <p class="description-select-plan-type-meal">
+                           With our Monthly Plan, you enjoy all the exclusive benefits and services, without long-term commitments. 
+                           It is the ideal solution for those looking for a quick, quality and efficient meal, paying only for what they need, month by month.
+                        </p>
+                     </div>
+                  </label>
+               </div>
+               <div class="grid-item">
+                  <label>
+                     <input type="radio" name="planOne" value="year">
+                     <img src="{{ url_for('static', filename='img/plan_12_month.png') }}" alt="Image 2" class="img-fluid fixed-size">
+                     <div class="description">
+                        <p class="description-select-plan-type-meal">
+                           Save more and enjoy everything we offer! With our Annual Plan, you get full access to all our exclusive services and benefits for 12 months, 
+                           with the added perk of paying less. It’s the perfect choice for those seeking convenience and smart savings.
+                        </p>
+                     </div>
+                  </label>
+               </div>
             </div>
             <p class="descritpion-select-plan">
-                Don’t worry, you can switch meal types at any time.
+               Don’t worry, you can switch meal types at any time.
             </p>
-        </div>
-        <hr>
-        <br>
-        <div class="selectPlan">
+         </div>
+         <hr>
+         <br>
+         <div class="selectPlan">
             <h5 class="h5-plan text-center">2 - Choose your preference:</h5>
             <ul class="plan-list">
-                <div class="div-label-plan">
-                    <li class="plan-item">
-                        <label>
-                            <input type="radio" name="plan" value="wellness" class="btRadioPlan">
-                            <span class="span-div-label-plan">Wellness</span>
-                        </label>
-                    </li>
-                </div>
-                <div class="div-label-plan">
-                    <li class="plan-item">
-                        <label>
-                            <input type="radio" name="plan" value="familyFriend" class="btRadioPlan">
-                            <span class="span-div-label-plan">Family</span>
-                        </label>
-                    </li>
-                </div>
-                <div class="div-label-plan">
-                    <li class="plan-item">
-                        <label>
-                            <input type="radio" name="plan" value="fastEasy" class="btRadioPlan">
-                            <span class="span-div-label-plan">Fast Easy</span>
-                        </label>
-                    </li>
-                </div>
-                <div class="div-label-plan">
-                    <li class="plan-item">
-                        <label>
-                            <input type="radio" name="plan" value="chefFavorite" class="btRadioPlan">
-                            <span class="span-div-label-plan">Chef Fast</span>
-                        </label>
-                    </li>
-                </div>
-                <div class="div-label-plan">
-                    <li class="plan-item">
-                        <label>
-                            <input type="radio" name="plan" value="veggies" class="btRadioPlan">
-                            <span class="span-div-label-plan">Veggies</span>
-                        </label>
-                    </li>
-                </div>
+               <div class="div-label-plan">
+                  <li class="plan-item">
+                     <label>
+                     <input type="radio" name="plan" value="wellness" class="btRadioPlan">
+                     <span class="span-div-label-plan">Wellness</span>
+                     </label>
+                  </li>
+               </div>
+               <div class="div-label-plan">
+                  <li class="plan-item">
+                     <label>
+                     <input type="radio" name="plan" value="familyFriend" class="btRadioPlan">
+                     <span class="span-div-label-plan">Family</span>
+                     </label>
+                  </li>
+               </div>
+               <div class="div-label-plan">
+                  <li class="plan-item">
+                     <label>
+                     <input type="radio" name="plan" value="fastEasy" class="btRadioPlan">
+                     <span class="span-div-label-plan">Fast Easy</span>
+                     </label>
+                  </li>
+               </div>
+               <div class="div-label-plan">
+                  <li class="plan-item">
+                     <label>
+                     <input type="radio" name="plan" value="chefFavorite" class="btRadioPlan">
+                     <span class="span-div-label-plan">Chef Fast</span>
+                     </label>
+                  </li>
+               </div>
+               <div class="div-label-plan">
+                  <li class="plan-item">
+                     <label>
+                     <input type="radio" name="plan" value="veggies" class="btRadioPlan">
+                     <span class="span-div-label-plan">Veggies</span>
+                     </label>
+                  </li>
+               </div>
             </ul>
             <p class="descritpion-select-plan">
-                Choose as many as you like and transform your experience! Your choices help us recommend perfect,
-                personalized meals for you
+               Choose as many as you like and transform your experience! Your choices help us recommend perfect,
+               personalized meals for you
             </p>
-        </div>
-        <hr>
-        <br>
-        <div class="select-day-for-delevery">
+         </div>
+         <hr>
+         <br>
+         <div class="select-day-for-delevery">
             <div class="multiselect-container">
-                <h5 class="h5-plan text-center">3 - Select your plan:</h5>
-                <br>
-                <h6 class="h5-plan text-center"> Servings per meal</h5>
-                <div class="multiselect-month">
-                    <button class="month-btn" value="1">2</button>
-                    <button class="month-btn" value="2">4</button>
-                </div>
-                <br>
-                <h6 class="h5-plan text-center">Meals per week</h5>
-                <div class="multiselect-days">
-                    <button class="day-btn" value="1">1</button>
-                    <button class="day-btn" value="2">2</button>
-                    <button class="day-btn" value="3">3</button>
-                    <button class="day-btn" value="4">4</button>
-                    <button class="day-btn" value="5">5</button>
-                    <button class="day-btn" value="6">6</button>
-                    <button class="day-btn" value="7">7</button>
-                </div>
+               <h5 class="h5-plan text-center">3 - Select your plan:</h5>
+               <br>
+               <h6 class="h5-plan text-center">
+               Servings per meal</h5>
+               <div class="multiselect-month">
+                  <button class="month-btn" value="1">2</button>
+                  <button class="month-btn" value="2">4</button>
+               </div>
+               <br>
+               <h6 class="h5-plan text-center">
+               Meals per week</h5>
+               <div class="multiselect-days">
+                  <button class="day-btn" value="1">1</button>
+                  <button class="day-btn" value="2">2</button>
+                  <button class="day-btn" value="3">3</button>
+                  <button class="day-btn" value="4">4</button>
+                  <button class="day-btn" value="5">5</button>
+                  <button class="day-btn" value="6">6</button>
+                  <button class="day-btn" value="7">7</button>
+               </div>
             </div>
-        </div>
-        <p class="descritpion-select-plan">
+         </div>
+         <p class="descritpion-select-plan">
             Update your preferences at any time! or cancel whenever you want and take full control of your experience.
-        </p>
-        <hr>
-        <br>
-        <div class="div-finish-select-plan">
-           
-        </div>
-        <div class="new-div-finish-select-plan">
+         </p>
+         <hr>
+         <br>
+         <div class="div-finish-select-plan" id="divFinishSelectPlan">
+         </div>
+         <div class="new-div-finish-select-plan">
             <a href="/checkout">
-            <button class="finish-select-plan-btn">Finish</button>
+                <button class="finish-select-plan-btn">Finish</button>
             </a>
-        </div>
-    </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <!-- Rodapé  https://cdn-icons-png.flaticon.com/512/5968/5968534.png-->
-    <footer>
-        <div class="footer-content">
-            <a href="https://wa.me/seu_numero_de_whatsapp" target="_blank">
-                <img src="{{url_for('static', filename='img/icon_whats.png')}}" alt="WhatsApp">
-                WhatsApp
-            </a>
-            <a href="mailto:seu_email@example.com" target="_blank">
-                <img src="{{url_for('static', filename='img/icon_gmail.png')}}" alt="E-mail">
-                E-mail
-            </a>
-            <a href="mailto:seu_email@example.com" target="_blank">
-                <img src="{{url_for('static', filename='img/icon_instas.png')}}" alt="E-mail">
-                Instagram
-            </a>
-        </div>
-        <div class="footer-culinary">
-            "Cooking is like love. It should be entered into with abandon or not at all." - Harriet Van Horne
-        </div>
-    </footer>
-
-    <script src="{{url_for('static', filename='lib/jquery/jquery.slim.min.js')}}"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-    <script src="{{url_for('static', filename='lib/bootstrap/js/bootstrap.min.js')}}"></script>
-    <script src="{{url_for('static', filename='js/plans.js')}}"></script>
-    <script src="{{url_for('static', filename='js/logout.js')}}"></script>
-</body>
-
+         </div>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      {% include 'footer-finish-page.html'%}
+      <script src="{{url_for('static', filename='lib/jquery/jquery.slim.min.js')}}"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+      <script src="{{url_for('static', filename='lib/bootstrap/js/bootstrap.min.js')}}"></script>
+      <script src="{{url_for('static', filename='js/plans.js')}}"></script>
+      <script src="{{url_for('static', filename='js/logout.js')}}"></script>
+   </body>
 </html>

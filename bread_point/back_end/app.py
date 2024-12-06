@@ -55,6 +55,21 @@ def login():
 def checkout():
     return render_template('checkout-plan.html')
 
+# Página de Produtos
+@app.route('/products')
+def products():
+    conn = get_db()
+    cursor = conn.cursor()
+    
+    # Buscar produtos do banco
+    cursor.execute("""
+        SELECT id, product_name, image FROM products
+    """)
+    products = [dict(row) for row in cursor.fetchall()]  
+    close_db(conn)
+
+    # Passar produtos para o template
+    return render_template('products.html', products=products)
 
 # Buscar produto específico pelo ID
 @app.route('/product/<int:product_id>', methods=['GET'])

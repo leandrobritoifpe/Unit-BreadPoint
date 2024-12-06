@@ -1,122 +1,89 @@
-.div-cadastro {
-    margin: -30px;
-    font-family: 'Libre Baskerville', serif;
-    background: #f5f5f5;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 120vh;
-  }
-  
-  /* Container central */
-  .register-container {
-    background: #75563F;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    width: 30%;
-    max-width: 400px;
-    box-sizing: border-box;
-  }
-  
-  /* Título */
-  .h1-cadastro{
-    margin-bottom: 1.5rem;
-    color: #aa8060;
-  }
-  
-  /* Formulário */
-  .register-form input {
-    width: 100%;
-    padding: 0.8rem;
-    margin: 0.5rem 0;
-    border: 1px solid #aa8060;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-  
-  .register-form button {
-    width: 100%;
-    padding: 0.8rem;
-    margin-top: 1rem;
-    background: #46745d;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .register-form button:hover {
-    background: #1d4732;
-  }
-  
-  /* Opções do formulário */
-  .form-options {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 0.9rem;
-    margin-top: 0.5rem;
-  }
-  
-  .form-options a {
-    color: #007bff;
-    text-decoration: none;
-  }
-  
-  .form-options a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Divisória */
-  .divider {
-    margin: 1.5rem 0;
-    color: #aa8060;
-    font-size: 1.5rem;
-  }
-  
-  /* Botões de login social */
-  .social-login button {
-    width: 100%;
-    padding: 0.8rem;
-    margin: 0.5rem 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    box-sizing: border-box;
-  }
-  
-  .social-login .apple {
-    background: #333;
-    color: #fff;
-  }
-  
-  .social-login .gmail {
-    background: #ea4335;
-    color: #fff;
-  }
-  
-  .social-login .facebook {
-    background: #1877f2;
-    color: #fff;
-  }
-  
-  .social-login button:hover {
-    opacity: 0.9;
-  }
-  
-  /* Link para login */
-  .login-link {
-    margin-top: 1rem;
-    font-size: 0.9rem;
-  }
-  
-  .login-link a {
-    color: #007bff;
-    text-decoration: none;
-  }
-  
-  .login-link a:hover {
-    text-decoration: underline;
-  }
+/* Estilo para centralizar a tela */
+.div-register {
+  margin: 1%;
+  font-family: 'Libre Baskerville', serif;
+  background: #f5f5f5;
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container de login */
+.register-container {
+  background: #75563F;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(11, 182, 79, 0.1);
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Título */
+.h1-register {
+  margin-bottom: 1.5rem;
+  color: #aa8060;
+}
+
+/* Estilo do formulário */
+.register-form input {
+  width: 100%;
+  padding: 0.8rem;
+  margin: 0.5rem 0;
+  border: 1px solid #aa8060;
+  border-radius: 4px;
+}
+
+.register-form button {
+  width: 100%;
+  padding: 0.8rem;
+  margin-top: 1rem;
+  background: #46745d;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.register-form button:hover {
+  background: #1d4732;
+}
+
+/* Linha divisória */
+.divider {
+  margin: 1.5rem 0;
+  color: #aa8060;
+  font-size: 2rem;
+}
+
+/* Botões de login social */
+.social-register button {
+  width: 100%;
+  padding: 0.8rem;
+  margin: 0.5rem 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Estilos de cada botão social */
+.social-register .apple {
+  background: #333;
+  color: #fff;
+}
+
+.social-register .gmail {
+  background: #ea4335;
+  color: #fff;
+}
+
+.social-register .facebook {
+  background: #1877f2;
+  color: #fff;
+}
+
+/* Efeito ao passar o mouse nos botões sociais */
+.social-register button:hover {
+  opacity: 0.9;
+}

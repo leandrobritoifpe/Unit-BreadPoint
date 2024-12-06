@@ -43,9 +43,9 @@ document.addEventListener('DOMContentLoaded', function() {
         const selectedPlanOne = document.querySelectorAll('input[name="planOne"]:checked');
         selectedPlanOne.forEach(function(plan) {
             const planValue = plan.value;
-            if (planValue === 'basic') {
+            if (planValue === 'month') {
                 total += 5;
-            } else if (planValue === 'family-friendly') {
+            } else if (planValue === 'year') {
                 total += 10;
             }
         });
