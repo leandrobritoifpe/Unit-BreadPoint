@@ -15,7 +15,7 @@ document.querySelector('.register-form').addEventListener('submit', function(eve
     .then(data => {
         if (data.message === 'User registered successfully') {
             alert('User Registered Successfully!');
-            // Redireciona ou faz algo após o registro
+            window.location.href = '/';
         } else {
             alert('Error: ' + data.message);
         }

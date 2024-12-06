@@ -1,15 +1,19 @@
 import os
 from flask_cors import CORS
-from flask import Flask, request, jsonify, render_template
+from flask import Flask, request, jsonify, render_template, session, redirect, url_for
+from flask_session import Session
 import sqlite3
 
 app = Flask(__name__, template_folder='templates', static_folder='static')
 CORS(app)
 
+app.secret_key = 'os.urandom(24)'  
+app.config['SESSION_TYPE'] = 'filesystem'  
+Session(app)
 # Conexão com o banco
 def get_db():
     conn = sqlite3.connect('bread_point.db')
-    conn.row_factory = sqlite3.Row  # Para acessar por nome de coluna
+    conn.row_factory = sqlite3.Row  # Acessa a coluna por nome
     return conn
 
 def close_db(conn):
@@ -25,7 +29,7 @@ def home():
     cursor.execute("""
         SELECT id, product_name, image FROM products
     """)
-    products = [dict(row) for row in cursor.fetchall()]  # Converter para dicionário
+    products = [dict(row) for row in cursor.fetchall()]  
     close_db(conn)
 
     # Passar produtos para o template
@@ -116,12 +120,20 @@ def login_user():
     cursor = conn.cursor()
     cursor.execute("SELECT * FROM users WHERE email=? AND password=?", (email, password))
     user = cursor.fetchone()
-    close_db(conn)
+    conn.close()
 
     if user:
+        session['logged_in'] = True  
+        session['email'] = email     
         return jsonify({"message": "Login successful"}), 200
     else:
         return jsonify({"error": "Invalid credentials"}), 401
+
+
+@app.route('/logout', methods=['GET'])
+def logout_user():
+    session.clear()  
+    return redirect(url_for('home'))
 
 if __name__ == '__main__':
     app.run(debug=True)

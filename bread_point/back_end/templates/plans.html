@@ -31,10 +31,22 @@
                     <a class="nav-link" href="/products">Menus</a>
                 </li>
             </ul>
-        </div>
-        <div class="d-flex">
-            <a href="/login" class="btn btn-outline-light btn-login mr-2">Login</a>
-            <a href="/register" class="btn btn-outline-light btn-register">Register</a>
+            <!-- Exibição condicional com base no login -->
+            <ul class="navbar-nav ml-auto">
+                {% if session.get('logged_in') %}
+                    <li class="nav-item">
+                        <a class="nav-link" href="/logout">
+                            <img src="{{ url_for('static', filename='img/userIcon.png') }}" alt="User Icon" width="30" />
+                            Logout
+                        </a>
+                    </li>
+                {% else %}
+                    <li class="nav-item">
+                        <a class="nav-link" href="/login">Login</a>
+                        <a class="nav-link" href="/register">register</a>
+                    </li>
+                {% endif %}
+            </ul>
         </div>
     </nav>
 
@@ -190,6 +202,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="{{url_for('static', filename='lib/bootstrap/js/bootstrap.min.js')}}"></script>
     <script src="{{url_for('static', filename='js/plans.js')}}"></script>
+    <script src="{{url_for('static', filename='js/logout.js')}}"></script>
 </body>
 
 </html>

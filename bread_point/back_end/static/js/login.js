@@ -15,7 +15,7 @@ document.querySelector('.login-form').addEventListener('submit', function(event)
     .then(data => {
         if (data.message === 'Login successful') {
             alert('Login Successful!');
-            // Redireciona ou faz algo após o login
+            window.location.href = '/';
         } else {
             alert('Invalid credentials');
         }
