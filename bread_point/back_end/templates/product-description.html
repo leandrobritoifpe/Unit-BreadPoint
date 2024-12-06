@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bread Point - Product Description</title>
+    <!-- Bootstrap CSS -->
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="{{url_for('static', filename='lib/bootstrap/css/bootstrap.min.css')}}">
+     <!-- Google Fonts -->
+     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+     <!-- Custom CSS -->
+     <link rel="stylesheet" href="{{url_for('static', filename='css/home.css')}}">
+     <link rel="stylesheet" href="{{url_for('static', filename='css/product-description.css')}}">
+</head>
+<body>
+    {% include 'navbar-select-option.html'%}
+    {% include 'product-banner.html'%}
+    <div class="div-main-description-products">
+        <div class="product-container">
+            <div class="product-image"> <img src="{{ product.image }}" alt="{{ product.name }}"> </div>
+            <div class="product-description">
+                <h2>{{ product.name }}</h2>
+                <p>{{ product.description }}</p>
+                <ul>
+                    <li><strong>Price:</strong> ${{ product.price }}</li>
+                    <li><strong>Calories:</strong> {{ product.calories }} kcal</li>
+                    <li><strong>Proteins:</strong> {{ product.protein }} g</li>
+                    <li><strong>Carbohydrates:</strong> {{ product.carbohydrates }} g</li>
+                    <li><strong>Fats:</strong> {{ product.fats }} g</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+   {% include 'footer-finish-page.html'%}
+    <script src="{{url_for('static', filename='lib/jquery/jquery.slim.min.js')}}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="{{url_for('static', filename='lib/bootstrap/js/bootstrap.min.js')}}"></script>
+    <script src="{{url_for('static', filename='js/scripts.js')}}"></script>
+    <script src="{{url_for('static', filename='js/logout.js')}}"></script>
+</body>
+</html>

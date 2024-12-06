@@ -1,0 +1,124 @@
+.div-main-description-products {
+  height: 55vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7f7f7;
+}
+
+.product-container {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+
+.product-image img {
+  max-width: 100%;
+  height: auto;
+  width: 300px; /* Tamanho fixo para manter a imagem com o mesmo tamanho */
+  border-radius: 5px;
+}
+
+.product-description h2 {
+  color: #75563F;
+  margin-top: 20px;
+}
+
+.product-description p {
+  color: #555;
+  margin: 10px 0;
+}
+
+.product-description ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.product-description ul li {
+  color: #333;
+  margin: 5px 0;
+}
+
+.product-description ul li strong {
+  color: #75563F;
+}
+
+
+/*** Style div plan-container**/
+.plans-container {
+  background-color: #75563F;
+  color: white;
+  padding: 20px;
+  margin: 20px auto;
+  width: 80%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.plans-container h2 {
+  margin-bottom: 20px;
+}
+
+.plans-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.plans-container ul li {
+  margin-bottom: 10px;
+}
+
+.plans-container ul li label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+.plans-container ul li label input[type="radio"] {
+  margin-right: 10px;
+}
+.plans-container ul li label span {
+  font-weight: bold;
+}
+/**-----------------------------------*/
+.product-div-message-delivery {
+  text-align: center;
+  font-size: 25pt;
+  color: #C3905F;
+}
+.product-div-sub-message-delivery {
+  text-align: center;
+  font-size: 15pt;
+  color: #C3905F;
+}
+.btn-view-plans-page-products {
+  background-color: #54705c;
+  color: white;
+  border: none;
+  padding: 10px 200px; /* Diminui ainda mais o tamanho do botão na horizontal */
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: 'Libre Baskerville', serif;
+  height: 50px; /* Mantém a altura do botão */
+  display: inline-flex; /* Usa inline-flex para garantir que o botão não seja influenciado por outras divs */
+  align-items: center; /* Centraliza o texto verticalmente */
+  justify-content: center; /* Centraliza o texto horizontalmente */
+  white-space: nowrap; /* Impede que o texto quebre para uma nova linha */
+  line-height: 1; /* Ajusta a altura da linha do texto */
+  max-width: 150px; /* Define uma largura máxima para o botão */
+  width:auto; /* Garante que a largura do botão seja automática */
+  border-radius: 20px;
+}
+
+.btn-view-plans-page-products:hover {
+  color: white;
+  background-color: #1d4732;
+  font-size: 15pt;
+}

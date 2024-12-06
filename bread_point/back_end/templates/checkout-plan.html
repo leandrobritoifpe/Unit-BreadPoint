@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Bread Point - Bakery</title>
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="{{url_for('static', filename='lib/bootstrap/css/bootstrap.min.css')}}">
+      <!-- Google Fonts -->
+      <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+      <!-- Custom CSS -->
+      <link rel="stylesheet" href="{{url_for('static', filename='css/home.css')}}">
+      <link rel="stylesheet" href="{{url_for('static', filename='css/checkout-plan.css')}}">
+   </head>
+   <body>
+      {% include 'navbar-select-option.html'%}
+      <!--Tela de Checkout do plano-->
+      <div class="div-checkout-plano">
+         <div class="checkout-container">
+            <h1 class="h1-checkout-plano">Plan Confirmation</h1>
+            <div class="plan-details">
+               <h2>Chosen Plan: <span>Basic</span></h2>
+               <p>DESCRIPTION: Daily access to fresh bread, discounts on special products, and free delivery in the central region.</p>
+               <h3>
+                  Value:
+                  <span>R$ XXX</span>
+               </h3>
+            </div>
+            <a href="/">
+                <button class="confirm-btn">Confirm Purchase</button>
+            </a>
+         </div>
+      </div>
+      <div id="divReceiveValue"></div>
+      {% include 'footer-finish-page.html'%}
+      <script src="{{url_for('static', filename='lib/jquery/jquery.slim.min.js')}}"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+      <script src="{{url_for('static', filename='lib/bootstrap/js/bootstrap.min.js')}}"></script>
+      <script src="{{url_for('static', filename='js/logout.js')}}"></script>
+   </body>
+</html>

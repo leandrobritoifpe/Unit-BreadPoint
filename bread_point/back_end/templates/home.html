@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Bread Point - Home</title>
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="{{url_for('static', filename='lib/bootstrap/css/bootstrap.min.css')}}">
+      <!-- Google Fonts -->
+      <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+      <!-- Custom CSS -->
+      <link rel="stylesheet" href="{{url_for('static', filename='css/home.css')}}">
+   </head>
+   <body>
+      {% include 'navbar-select-option.html'%}
+      <div class="div-bar-green">
+      </div>
+      <!--<a href="https://www.example.com" class="clickable-background">-->
+      <!-- First Banner -->
+      <div class="banner">
+         <div class="banner-text">
+            <div class="banner-phrase">Easy meal kits.</div>
+            <div class="banner-phrase">Quality ingredients.</div>
+            <div class="banner-phrase">Delivered to your door.</div>
+         </div>
+         <div class="banner-content">
+            <a href="/plans" class="btn btn-light btn-view-plans">SEE PLANS</a>
+         </div>
+      </div>
+      <!-- Spacer -->
+      <div class="spacer"></div>
+      <!-- Second Banner -->
+      <div class="second-banner">
+         <div class="container-fluid">
+            <div class="row align-items-center no-gutters">
+               <div class="col-md-6">
+                  <div class="second-banner-content">
+                     <div class="div-group-h4-second-banner">
+                        <h4>Simple</h4>
+                        <h4>Easy</h4>
+                        <h4>Delicious</h4>
+                     </div>
+                     <p>
+                        Enjoy our menu and choose what fits your taste.
+                     </p>
+                     <div class="btn-center">
+                        <a href="/plans" class="btn btn-view-plans-secondary">SEE PLANS</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- New Div with Two Phrases -->
+      <div class="phrases-container">
+         <div class="phrase-top">CHOOSE FROM</div>
+         <div class="phrase-bottom">VARIOUS OPTIONS</div>
+      </div>
+      <!-- Menu Grid -->
+      <div class="menu-grid">
+         <div class="container">
+            <div class="row">
+               {% for product in products %}
+               <div class="col-md-3 col-sm-6 mb-4">
+                  <div class="card">
+                     <!-- Imagem do produto -->
+                     <a href="/product/{{ product.id }}" class="card-img-link">
+                     <img src="{{ product.image }}" alt="{{ product.product_name }}" class="card-img-top">
+                     </a>
+                     <div class="card-body">
+                        <!-- Nome do produto -->
+                        <a href="/product/{{ product.id }}" class="card-title-link">
+                           <h5 class="card-title">{{ product.product_name }}</h5>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+               {% endfor %}
+            </div>
+         </div>
+      </div>
+      {% include 'footer-finish-page.html'%}
+      <!-- Script de Importação -->
+      <script src="{{url_for('static', filename='lib/jquery/jquery.slim.min.js')}}"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+      <script src="{{url_for('static', filename='lib/bootstrap/js/bootstrap.min.js')}}"></script>
+      <script src="{{url_for('static', filename='js/scripts.js')}}"></script>
+      <script src="{{url_for('static', filename='js/logout.js')}}"></script>
+   </body>
+</html>
